@@ -94,4 +94,12 @@
         });
     });
 
+    // Change language
+    $('#flag').click(function() {
+        $(this).toggleClass('flag-spa');
+        $(this).toggleClass('flag-eng');
+        $('.eng').toggleClass('hide');
+        $('.spa').toggleClass('hide');
+    });
+
 })(jQuery);

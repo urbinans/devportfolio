@@ -166,6 +166,23 @@ header {
         display: inline-block;
     }
 
+    #flag {
+        background-image: url("../images/spa-eng.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        width: 30px;
+        height: 15px;
+    }
+
+    .flag-spa {
+        background-position-y: -15px;
+    }
+    
+    .flag-eng {
+        background-position-y: 0px;
+    }
+
     a {
         display: block;
         color: $base-color;
@@ -337,6 +354,10 @@ footer {
 
 .background-alt {
     background: $background-alt;
+}
+
+.hide {
+    display: none;
 }
 
 /*

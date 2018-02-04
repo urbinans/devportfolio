@@ -34,12 +34,12 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #e02d2d;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
 $background: #fff;
-$background-alt: #f2f2f5;
+$background-alt: #f5f2f2;
 
 // Define border colors
 $border: #dcd9d9;
@@ -164,6 +164,23 @@ header {
 
     li {
         display: inline-block;
+    }
+
+    #flag {
+        background-image: url("../images/spa-eng.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        width: 30px;
+        height: 15px;
+    }
+
+    .flag-spa {
+        background-position-y: -15px;
+    }
+    
+    .flag-eng {
+        background-position-y: 0px;
     }
 
     a {
@@ -339,6 +356,10 @@ footer {
     background: $background-alt;
 }
 
+.hide {
+    display: none;
+}
+
 /*
     --------------------------
     ----- 4. Lead Styles -----
@@ -370,6 +391,7 @@ footer {
 
     h1 {
         color: #fff;
+        font-family: 'Monoton', cursive;
         font-weight: 900;
         font-size: 5em;
         text-transform: uppercase;
@@ -382,6 +404,30 @@ footer {
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
+    }
+    .social {
+        text-align: center;
+    
+        ul {
+            margin: 5px 0 0 0;
+            padding: 0;
+        }
+    
+        li {
+            display: inline-block;
+            font-size: 2em;
+            list-style: none;
+        }
+    
+        a {
+            display: block;
+            color: lighten($base-color, 25%);
+            padding: 10px;
+    
+            &:hover {
+                color: $base-color;
+            }
+        }
     }
 }
 

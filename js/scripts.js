@@ -36,7 +36,7 @@
     });
 
     // Scroll to top
-    $('#to-top').click(function() {
+    $('.to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
@@ -92,6 +92,14 @@
         $(this).fadeOut(300, function() {
             $('#more-projects').fadeIn(300);
         });
+    });
+
+    // Change language
+    $('#flag').click(function() {
+        $(this).toggleClass('flag-spa');
+        $(this).toggleClass('flag-eng');
+        $('.eng').toggleClass('hide');
+        $('.spa').toggleClass('hide');
     });
 
 })(jQuery);

@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -25,25 +26,35 @@
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about">About</a>
+                <div id="flag" class="flag-spa"></div>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#about" class="eng">About</a>
+                <a href="#about" class="spa hide">Acerca de</a>
             </li>
             <li>
-                <a href="#education">Education</a>
+                <a href="#experience" class="eng">Experience</a>
+                <a href="#experience" class="spa hide">Experiencia</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#education" class="eng">Education</a>
+                <a href="#education" class="spa hide">Educación</a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
+                <a href="#projects" class="eng">Projects</a>
+                <a href="#projects" class="spa hide">Proyectos</a>
             </li>
             <li>
-                <a href="#languages">Languages</a>
+                <a href="#skills" class="eng">Skills</a>
+                <a href="#skills" class="spa hide">Habilidades</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#languages" class="eng">Languages</a>
+                <a href="#languages" class="spa hide">Idiomas</a>
+            </li>
+            <li>
+                <a href="#contact" class="eng">Contact</a>
+                <a href="#contact" class="spa hide">Contacto</a>
             </li>
         </ul>
     </header>
@@ -52,8 +63,29 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Nelson Urbina</h1>
-            <h2>Fully adaptable Software Developer</h2>
-            <a href="files/Resume N Urbina English.pdf" download="Resume N Urbina English.pdf" class="btn-rounded-white">Download Resume</a>
+            <h2 class="eng">Fully adaptable Software Developer</h2>
+            <h2 class="spa hide">Desarrollador de Software</h2>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://github.com/urbinans" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/story/nelsonurbina" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Nelson.Urbina.H" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/NelsonUrbinaH" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+NelsonUrbina" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="files/Resume N Urbina English.pdf" download="Resume N Urbina English.pdf" class="btn-rounded-white eng">Download Resume</a>
+            <a href="files/Resume N Urbina Español.pdf" download="Resume N Urbina Español.pdf" class="btn-rounded-white spa hide">Descargar Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -72,27 +104,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+                    <h2 class="heading eng">About Me</h2>
+                    <h2 class="heading spa hide">Acerca de mi</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
+                    <p class="eng">
                         I'm an applied mathematician with strong problem-solving capabilities and a
                         passion driven by IT and Software development, looking for an opportunity
                         in the Software industry and to be part of a team of good friends who share
                         this same passion.
                     </p>
+                    <p class="spa hide">
+                        Soy egresado en Matemáticas Aplicadas con sólidas habilidades
+                        para la resolución de problemas y una pasión impulsada por las Tecnologías
+                        de la Información y el Desarrollo de Aplicaciones, buscando una oportunidad
+                        en la industria del Software para ser parte de un equipo que comparta
+                        la misma pasión.
+                    </p>
                     <br />
-                    <p>
-                        I enjoy building applications in different computer languages and learn new
+                    <p class="eng">
+                        I enjoy building applications in different Computer Languages and learn new
                         ones just for fun. I also have solid statistics and scientific computing
                         background, a Sap-ERP-HCM certification, knowledge of the ISO 9001:2015
                         standard and experience in the implementation of Quality Management Systems.
+                    </p>
+                    <p class="spa hide">
+                        Disfruto programando en diferentes Lenguajes de Computación y
+                        aprendiendo nuevos lenguajes, sólo por diversión. También tengo sólidos
+                        conocimientos en estadística y cómputo científico, certificado en
+                        Sap-ERP-HCM, dominio de la Norma ISO 9001:2015 y experiencia en
+                        Sistemas de Gestión de la Calidad.
                     </p>
                 </div>
             </div>
         </div>
         <div class="top">
-            <span id="to-top">
+            <span class="to-top">
                 <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </span>
         </div>
@@ -100,31 +147,46 @@
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
+        <h2 class="heading eng">Experience</h2>
+        <h2 class="heading spa hide">Experiencia</h2>
         <div id="experience-timeline">
             <div data-date="November 2016 – Present">
-                <h3>Freelancer</h3>
-                <h4>English - Spanish Translator</h4>
-                <p>
+                <h3 class="eng">Freelancer</h3>
+                <h3 class="spa hide">Trabajador Independiente</h3>
+                <h4 class="eng">English - Spanish Translator</h4>
+                <h4 class="spa hide">Intérprete Inglés - Español</h4>
+                <p class="eng">
                     English - Spanish translation services of texts and documents, as requested
                     by clients.
+                </p>
+                <p class="spa hide">
+                    Servicios de traducción Inglés - Español de documentos, ajustados a
+                    los requerimientos del cliente.
                 </p>
             </div>
 
             <div data-date="May 2008 – Present">
                 <h3>Petróleos de Venezuela S.A.</h3>
-                <h4>Advance SAP HCM User Support and Instructor</h4>
-                <p>
+                <h4 class="eng">Advance SAP HCM User Support and Instructor</h4>
+                <h4 class="spa hide">Usuario de Avanzada e Instructor SAP HCM</h4>
+                <p class="eng">
                     Ensure the implementation and operational continuity of SAP HCM within the
-                    company, Design and implement the necessary methodologies to carry out the
+                    company, design and implement the necessary methodologies to carry out the
                     transfer of knowledge to other users, support SAP HCM module's end users.
+                </p>
+                <p class="spa hide">
+                    Garantizar la implantación y Continuidad operativa de SAP HCM dentro de la
+                    empresa, diseñar y aplicar la metodología necesaria para realizar la
+                    transferencia de conocimientos a otros usuarios, brindar soporte a los
+                    usuarios finales en el uso efectivo del módulo SAP HCM.
                 </p>
             </div>
 
             <div data-date="April 2003 – Present">
                 <h3>Petróleos de Venezuela S.A.</h3>
-                <h4>HR Professional</h4>
-                <p>
+                <h4 class="eng">HR Professional</h4>
+                <h4 class="spa hide">Profesional en RRHH</h4>
+                <p class="eng">
                     Lead Projects for new technologies and trends in Human Resources; Stablish
                     new technologies for handling personal information that leverages the
                     objectives of the organization; Conduct special studies for Direct and Indirect
@@ -132,10 +194,19 @@
                     Coordinate the process of implementation of the Quality Management System for
                     the Human Resources department under ISO - 9001 standard.
                 </p>
+                <p class="spa hide">
+                    Dirigir proyectos de implantación de nuevas tecnologías en
+                    Recursos Humanos; Implantación de nuevas tecnologías para el manejo de
+                    información de personal que apalanque los objetivos de la organización;
+                    Dirigir estudios especiales en Remuneración Directa e Indirecta, Planificación
+                    Estratégica, Análisis y Optimización de Procesos; Coordinar el proceso de
+                    implantación del Sistema de Gestión de Calidad de la Gerencia de Recursos
+                    Humanos bajo la Normativa ISO-9001.
+                </p>
             </div>
         </div>
         <div class="top">
-            <span id="to-top">
+            <span class="to-top">
                 <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </span>
         </div>
@@ -143,47 +214,76 @@
     <!-- End #experience -->
 
     <div id="education">
-        <h2 class="heading">Education</h2>
+        <h2 class="heading eng">Education</h2>
+        <h2 class="heading spa hide">Educación</h2>
         <div class="education-block">
-            <h3>Simón Bolívar University</h3>
+            <h3 class="eng">Simón Bolívar University</h3>
+            <h3 class="spa hide">Universidad Simón Bolívar</h3>
             <span class="education-date">Sept 1993 - Nov 2001</span>
-            <h4>Bachelor of Science in Applied Mathematics</h4>
-            <p>
+            <h4 class="eng">Bachelor of Science in Applied Mathematics</h4>
+            <h4 class="spa hide">Licenciado en Matemáticas Aplicadas</h4>
+            <p class="eng">
                 Minor in Statistics and Computational Mathematics. I learned about (to name a few):
             </p>
+            <p class="spa hide">
+                Mención en Estadísticas y Matemáticas Computacionales. Algunos tópicos estudiados fueron:
+            </p>
             <ul>
-                <li>
+                <li class="eng">
                     Programming in: Java, C++, HTML, Pascal, Fortran, R, Matlab, Lisp, Scheme
-                </li>        
-                <li>
+                </li>
+                <li class="spa hide">
+                    Programación en: Java, C++, HTML, Pascal, Fortran, R, Matlab, Lisp, Scheme
+                </li>
+                <li class="eng">
                     Computer Graphics with OpenGL
                 </li>
-                <li>
+                <li class="spa hide">
+                    Computación Gráfica con OpenGL
+                </li>
+                <li class="eng">
                     Mathematical and Statistical Modeling
                 </li>
-                <li>
+                <li class="spa hide">
+                    Modelaje Matemático y Estadístico
+                </li>
+                <li class="eng">
                     Advanced Algorithm Analysis and Design
                 </li>
-                <li>
+                <li class="spa hide">
+                    Análisis y Diseño avanzado de Algoritmos.
+                </li>
+                <li class="eng">
                    Scientific Computing and Network Flows
+                </li>
+                <li class="spa hide">
+                    Cómputo Científico y Flujo en Redes
                 </li>
             </ul>
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>University of Uppsala</h3>
-            <span class="education-date">Sept 2000 - Aug 2001</span>
-            <h4>International Exchange Student</h4>
-            <p>
+            <h3 class="eng">Uppsala University</h3>
+            <h3 class="spa hide">Universidad de Uppsala</h3>
+            <span class="education-date eng">Sept 2000 - Aug 2001</span>
+            <span class="education-date spa hide">Sept 2000 - Ago 2001</span>
+            <h4 class="eng">International Exchange Student</h4>
+            <h4 class="spa hide">Estudiante de Intercambio Internacional</h4>
+            <p class="eng">
                 Being selected for the International Exchange Program with Uppsala University,
                 gave me the experience of living and studying in Uppsala and Sundsvall, in the
                 beautiful country of Sweden during my last academic year.
             </p>
+            <p class="spa hide">
+                Al ser seleccionado para participar en el Programa de Intercambio Internacional con
+                la Universidad de Uppsala, tuve la oportunidad de experimentar el vivir y estudiar
+                en Uppsala y Sundsvall, en la hermosa nación de Suecia, durante mi último año académico.
+            </p>
         </div>
         <!-- End .education-block -->
         <div class="top">
-            <span id="to-top">
+            <span class="to-top">
                 <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </span>
         </div>
@@ -191,7 +291,8 @@
     <!-- End #education -->
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading eng">Projects</h2>
+        <h2 class="heading spa hide">Proyectos</h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
@@ -200,15 +301,24 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>My SoloLearn Profile</h3>
-                        <p>
+                        <h3 class="eng">My SoloLearn Profile</h3>
+                        <h3 class="spa hide">Mi perfil en SoloLearn</h3>
+                        <p class="eng">
                             SoloLearn is a great developers community looking forward to learn and
                             improve their coding skills. I got several small projects that I made
                             just for fun and to test a few things. Nothing too fancy, only small
                             coding snippets to try different languages features and getting along
                             with other programmers at the same time.
                         </p>
-                        <a href="https://www.sololearn.com/Profile/895574/" target="_blank">View my codes at SoloLearn</a>
+                        <p class="spa hide">
+                            SoloLearn es una grandiosa comunidad de desarrolladores que buscan aprender
+                            y mejorar sus habilidades de programación. Tengo varios proyectos que hice
+                            sólo por diversión y para hacer algunas pruebas. Nada demasiado exótico, sólo
+                            pequeños extractos de código para probar diferentes características de varios
+                            lenguajes e interactuar al mismo tiempo con otros programadores.
+                        </p>
+                        <a href="https://www.sololearn.com/Profile/895574/" target="_blank" class="eng">View my codes at SoloLearn</a>
+                        <a href="https://www.sololearn.com/Profile/895574/" target="_blank" class="spa hide">Ver mi perfil en SoloLearn</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -220,20 +330,31 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>My Codepen profile</h3>
-                        <p>
+                        <h3 class="eng">My Codepen profile</h3>
+                        <h3 class="spa hide">Mi perfil en Codepen</h3>
+                        <p class="eng">
                             Here at Codepen I decided to host my FreeCodeCamp projects. You can find
                             here what I have been working while pursuing the FullStack Certification
                             from FreeCodeCamp. StayTune for more!
                         </p>
-                        <a href="https://codepen.io/urbinans/" target="_blank">View my codes at Codepen</a>
+                        <p class="spa hide">
+                            Decidí utilizar Codepen para hospedar mis proyectos de FreeCodeCamp. Aquí
+                            encontrarás lo que he estado trabajando mientras intento obtener la
+                            certificación de Desarrollador FullStack de FreeCodeCamp. ¡Mantén la
+                            Sintonía para más!
+                        </p>
+                        <a href="https://codepen.io/urbinans/" target="_blank" class="eng">View my codes at Codepen</a>
+                        <a href="https://codepen.io/urbinans/" target="_blank" class="spa hide">Ver mis códigos en Codepen</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
             </div>
         </div>
-        <a id="view-more-projects" href="#">View More Projects</a>
+        <a id="view-more-projects" href="#">
+            <span class="eng">View More Projects</span>
+            <span class="spa hide">Ver más Proyectos</span>
+        </a>
         <div id="more-projects" class="row">
             <div class="project shadow-large no-image">
                 <!-- <div class="project-image">
@@ -241,9 +362,13 @@
                 </div>-->
                 <!-- End .project-image -->
                 <div class="project-info">
-                    <h3>Coming soon</h3>
-                    <p>
+                    <h3 class="eng">Coming soon</h3>
+                    <h3 class="spa hide">Muy pronto</h3>
+                    <p class="eng">
                         I will be adding some more here in a while...
+                    </p>
+                    <p class="spa hide">
+                        Estaré añadiendo más dentro de poco...
                     </p>
                     <!--<a href="#">View Project</a>-->
                 </div>
@@ -252,7 +377,7 @@
             <!-- End .project -->
         </div>
         <div class="top">
-            <span id="to-top">
+            <span class="to-top">
                 <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </span>
         </div>
@@ -260,7 +385,8 @@
     <!-- End #projects -->
 
     <div id="skills">
-        <h2 class="heading">Skills</h2>
+        <h2 class="heading eng">Skills</h2>
+        <h2 class="heading spa hide">Habilidades</h2>
         <ul>
             <li>Java</li>
             <li>C/C++</li>
@@ -283,7 +409,7 @@
             <li>SAP-ERP-HCM</li>
         </ul>
         <div class="top">
-            <span id="to-top">
+            <span class="to-top">
                 <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </span>
         </div>
@@ -291,31 +417,44 @@
     <!-- End #skills -->
 
     <div id="languages" class="optional-section background-alt">
-        <h2 class="heading">Languages<br /><small>(the ones that people use)</small></h2>
+        <h2 class="heading eng">Languages<br /><small>(the ones that people use)</small></h2>
+        <h2 class="heading spa hide">Idiomas<br /><small>(porque vivimos en una aldea global)</small></h2>
     
         <div class="optional-section-block">
-            <h3>Spanish</h3>
-            <p>
+            <h3 class="eng">Spanish</h3>
+            <h3 class="spa hide">Español</h3>
+            <p class="eng">
                 My native language. I'm completely fluent in it.
+            </p>
+            <p class="spa hide">
+                Mi lengua natal. Total fluidez en el idioma.
             </p>
         </div>
         <!-- End .optional-section-block -->
         <div class="optional-section-block">
-            <h3>English</h3>
-            <p>
+            <h3 class="eng">English</h3>
+            <h3 class="spa hide">Inglés</h3>
+            <p class="eng">
                 Perfect Professional and Technical Command.
+            </p>
+            <p class="spa hide">
+                Perfecto Dominio Profesional y Técnico.
             </p>
         </div>
         <!-- End .optional-section-block -->        
         <div class="optional-section-block">
-            <h3>Swedish</h3>
-            <p>
+            <h3 class="eng">Swedish</h3>
+            <h3 class="spa hide">Sueco</h3>
+            <p class="eng">
                 Still basic but looking forward to get better.
+            </p>
+            <p class="spa hide">
+                Aún con conocimientos básicos pero esperando mejorar pronto.
             </p>
         </div>
         <!-- End .optional-section-block -->
         <div class="top">
-            <span id="to-top">
+            <span class="to-top">
                 <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </span>
         </div>
@@ -323,13 +462,17 @@
     <!-- End .optional-section -->
 
     <div id="contact">
-        <h2>Let's get in Touch!</h2>
+        <h2 class="eng">Let's get in Touch!</h2>
+        <h2 class="spa hide">¡Pongámonos en Contacto!</h2>
         <div id="contact-form">
             <form method="POST" action="https://formspree.io/urbinans@gmail.com">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">
+                    <span class="eng">Send</span>
+                    <span class="spa hide">Enviar</span>
+                </button>
             </form>
         </div>
         <!-- End #contact-form -->
@@ -340,12 +483,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
-                    <p>
+                    <p class="eng">
                         Copyright &copy; 2018 NELSON URBINA
+                    </p>
+                    <p class="spa hide">
+                        Derechos Reservados &copy; 2018 NELSON URBINA
                     </p>
                 </div>
                 <div class="col-sm-2 top">
-                    <span id="to-top">
+                    <span class="to-top">
                         <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </span>
                 </div>
@@ -355,7 +501,7 @@
                             <a href="https://github.com/urbinans" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/users/9275558/nelson-urbina?tab=profile" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                            <a href="https://stackoverflow.com/story/nelsonurbina" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/Nelson.Urbina.H" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -376,5 +522,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
-
 </html>

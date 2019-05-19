@@ -9,12 +9,14 @@
   "keywords": [
     "portfolio",
     "personal",
+    "developer",
+    "software",
     "website",
     "tech",
     "coding",
     "dev"
   ],
-  "author": "Ryan Fitzgerald",
+  "author": "Nelson Urbina",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
